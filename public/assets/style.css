@@ -1,0 +1,53 @@
+*, ::after, ::before{
+  box-sizing: unset;
+}
+table tr th:last-of-type {
+    width: 300px;
+}
+nav{
+  background-color:#00acc1;
+}
+[role ="button"] {
+  padding: 5px 10px;
+}
+
+.btn-delete {
+  --primary: #e53935;
+}
+
+.btn-edit {
+  --primary: #1e88e5;
+}
+
+.btn-add {
+  --primary: #43a047;
+}
+
+.btn-save {
+  --primary: #43a047;
+}
+
+.btn-cancel {
+  --primary: #f4511e;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .show-mobile {
+    display: inline-block;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 601px) {
+  .show-mobile {
+    display: none;
+}
+
+.hide-mobile {
+    display: inline-block;
+  }
+}
