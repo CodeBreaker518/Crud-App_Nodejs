@@ -1,9 +1,14 @@
 import mysql from 'mysql'
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '12001369',
-  database: 'crud_nodejs_db'
+  host: 'gateway01.us-east-1.prod.aws.tidbcloud.com',
+  port: 4000,
+  user: 'ym77hznZWW2YTge.root',
+  password: 'O5e7D1Ea1xyhku6s',
+  database: 'formulary',
+  ssl: {
+    minVersion: 'TLSv1.2',
+    rejectUnauthorized: true
+  }
 })
 
 connection.connect((error) => {
